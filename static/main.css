@@ -1,0 +1,21 @@
+html,body {
+    height: 100%;
+    margin: 0;
+}
+
+.container {
+    margin:0 auto;
+    height:100%;
+    width:100%;
+    background-color: brown;
+    color:greenyellow;
+    overflow:hidden;
+    text-align: center;
+}
+
+.container h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    color: honeydew;
+}
+
