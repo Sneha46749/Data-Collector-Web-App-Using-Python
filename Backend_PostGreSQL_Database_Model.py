@@ -4,6 +4,7 @@ from flask.ext.sqlalchemy import SQLAlchemy
 app=Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI']='postgresql://postgres:postgres123@localhost/height_collector'  
 #Connectng the database with the app
+
 db = SQLAlchemy()   #Creating a class alchemy object for this falsk application
 
 class Data(db.Model):
