@@ -2,10 +2,12 @@ from flask import Flask,render_template,request
 from flask.ext.sqlalchemy import SQLAlchemy
 
 app=Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI']='postgresql://postgres:postgres123@localhost/height_collector'  
-#Connectng the database with the app
 
-db = SQLAlchemy()   #Creating a class alchemy object for this falsk application
+"""Connectng the database with the app"""
+app.config['SQLALCHEMY_DATABASE_URI']='postgresql://postgres:postgres123@localhost/height_collector'  
+
+"""Creating a class alchemy object for this falsk application"""
+db = SQLAlchemy()  
 
 class Data(db.Model):
     __tablename__="data"
