@@ -19,6 +19,3 @@ def send_email(email,height):
     gmail.starttls()
     gmail.login(from_email,from_password)
     gmail.send_message(msg)
-
-
-
