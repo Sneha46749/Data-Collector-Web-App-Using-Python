@@ -16,7 +16,6 @@ def __init__(self,email,height):
     self.email = email
     self.height = height
 
-
 @app.route("/")
 def index():
     return render_template("index.html")
